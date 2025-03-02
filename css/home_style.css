@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+
+body {
+    background: white;
+    font-family: 'Helvetica Now Text', sans-serif;
+}
+
+.page-wrapper {
+    width: 1440px;
+    position: relative;
+    background: white;
+    margin: 0 auto;
+}
+
+.header {
+    width: 1440px;
+    height: 101px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+}
+
+.logo {
+    position: absolute;
+    left: 148px;
+    top: 35px;
+    color: #276C8A;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.nav {
+    position: absolute;
+    top: 42px;
+    left: 848px;
+    display: flex;
+    gap: 40px;
+}
+
+.nav-item {
+    color: #276C8A;
+    font-size: 16px;
+    font-family: 'Helvetica Now Text', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    cursor: pointer;
+}
+
+.home-underline {
+    width: 30px;
+    border: 1.5px solid #276C8A;
+    position: absolute;
+    bottom: -5px;
+    left: 9px;
+}
+
+.hero-image {
+    position: absolute;
+    width: 1744.57px;
+    height: 535px;
+    left: -159px;
+    top: 101px;
+    object-fit: cover;
+}
+
+.button-scopri {
+    width: 195px;
+    height: 41px;
+    position: absolute;
+    left: 623px;
+    top: 509px;
+    background: #2B7A9D;
+    border-radius: 9px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-scopri span {
+    color: white;
+    font-size: 16px;
+    font-family: 'Helvetica Now Text', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.intro-text {
+    width: 762px;
+    position: absolute;
+    left: 339px;
+    top: 738px;
+    text-align: center;
+    color: #1E1E1E;
+    font-size: 32px;
+    font-family: 'Helvetica Now Text', sans-serif;
+    font-weight: 400;
+    line-height: 41.68px;
+}
+
+.park-image {
+    width: 475px;
+    height: 295px;
+    position: absolute;
+    box-shadow: 4px 8px 19px rgba(0, 0, 0, 0.25);
+    object-fit: cover;
+}
+
+.gran-paradiso-img {
+    left: 204px;
+    top: 1050px;
+}
+.gran-paradiso-title {
+    left: 720px;
+    top: 1085px;
+}
+.gran-paradiso-desc {
+    left: 723px;
+    top: 1160px;
+}
+
+.etna-img {
+    left: 204px;
+    top: 1447px;
+}
+.etna-title {
+    left: 723px;
+    top: 1482px;
+}
+.etna-desc {
+    left: 723px;
+    top: 1557px;
+}
+
+.pollino-img {
+    left: 204px;
+    top: 1844px;
+}
+.pollino-title {
+    left: 720px;
+    top: 1879px;
+}
+.pollino-desc {
+    left: 723px;
+    top: 1954px;
+}
+
+.dolomiti-img {
+    left: 204px;
+    top: 2241px;
+}
+.dolomiti-title {
+    left: 720px;
+    top: 2276px;
+}
+.dolomiti-desc {
+    left: 723px;
+    top: 2393px;
+}
+
+.park-title {
+    position: absolute;
+    text-align: center;
+    color: #276C8A;
+    font-size: 32px;
+    font-family: 'Helvetica Now Text', sans-serif;
+    font-weight: 500;
+    text-decoration: underline;
+    line-height: 41.68px;
+}
+
+.park-description {
+    width: 442px;
+    position: absolute;
+    color: #545353;
+    font-size: 20px;
+    font-family: 'Helvetica Now Text', sans-serif;
+    font-weight: 400;
+    line-height: 29.60px;
+}
+
+.testo-base {
+    color: #545353;
+}
+
+.scopri {
+    color: #276C8A;
+}
+
+
+.footer {
+    position: absolute;
+    left: 0;
+    top: 2765px;
+    width: 1440px;
+    height: 101px;
+    background: #2B7A9D;
+  }
+  
+  .footer-content {
+    position: relative; 
+    left: 204px;
+    top: 0;               
+    width: 590px;
+    height: 29px;
+    color: white;
+  
+    margin-top: 36px;
+  
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .footer-links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 0;
+  }
+  
+  .footer-divider {
+    width: 1px;
+    height: 20px; 
+    background: white;
+  }
+  
+  .footer-link {
+    color: white;
+    font-size: 20px;
+    font-family: 'Helvetica Now Text', sans-serif;
+    font-weight: 500;
+    text-transform: capitalize;
+    cursor: pointer;
+  }
+
+@media (max-width: 1439px) {
+    .page-wrapper {
+        transform: scale(0.9);
+        transform-origin: top left;
+    }
+}
+
+@media (max-width: 1024px) {
+    .page-wrapper {
+        transform: scale(0.75);
+        transform-origin: top left;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-wrapper {
+        transform: none;
+        width: 100%;
+        height: auto;
+    }
+
+    .header {
+        position: static;
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+    .logo {
+        position: static;
+        margin: 0;
+    }
+    .nav {
+        position: static;
+        gap: 1rem;
+    }
+    .home-underline {
+        display: none;
+    }
+
+    .hero-image {
+        position: static;
+        width: 100%;
+        max-width: 100%;
+        left: auto;
+        top: auto;
+        margin-top: 101px;
+    }
+    .button-scopri {
+        position: static;
+        margin: 1rem auto;
+    }
+    .intro-text {
+        position: static;
+        width: auto;
+        margin: 1rem;
+        font-size: 20px;
+        line-height: 1.4;
+    }
+
+    .park-image,
+    .park-title,
+    .park-description {
+        position: static;
+        margin: 1rem auto;
+        text-align: center;
+    }
+
+    .park-image {
+        display: block;         
+        width: 80%;
+        max-width: 475px;
+        height: auto;
+        margin: 1rem auto;   
+    }
+
+    .park-description {
+        width: auto;
+    }
+
+    .footer {
+        position: static;  
+        width: 100%;
+        height: auto;
+        margin-top: 2rem;
+    }
+
+    .footer-content {
+        position: static;
+        width: auto;
+        margin: 0 auto;
+        padding: 1rem;
+        text-align: center;
+        top: auto;
+        left: auto;
+    }
+    .footer-links {
+        position: static;
+        margin: 0 auto;
+    }
+}
